@@ -1,2 +1,1 @@
-# Skena-Events-Site
-Skena Events official site
+# Skena Events Site
