@@ -1,1 +1,0 @@
-# Skena Events Site
