@@ -6,7 +6,7 @@ export default function Navbar() {
       <Link href="/">Sākums</Link> |{' '}
       <Link href="/login">Mans konts</Link> |{' '}
       <Link href="/calculator">Kalkulators</Link> |{' '}
-      <Link href="/contact">Kontakti</Link>
+      <Link href="/kontakt">Kontakti</Link>
     </nav>
   );
 }
