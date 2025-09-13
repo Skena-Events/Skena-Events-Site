@@ -1,1 +1,13 @@
-/* Global styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Тёмная тема по умолчанию */
+:root { color-scheme: dark; }
+body {
+  @apply bg-neutral-950 text-neutral-100;
+}
+a { @apply text-indigo-400 hover:text-indigo-300; }
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
