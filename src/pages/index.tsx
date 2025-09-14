@@ -1,33 +1,23 @@
-
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
+import ContactCTA from "@/components/ContactCTA";
+import Footer from "@/components/Footer";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head><title>Skena Events — skatuves, gaismas, skaņa</title></Head>
       <Navbar />
-      <main className="container py-10">
-        <section className="rounded-2xl border border-neutral-800 bg-neutral-900 p-8 shadow-xl">
-          <h1 className="text-3xl md:text-4xl font-bold">Skena Events</h1>
-          <p className="mt-3 text-neutral-300">
-            Profesionāla skatuves aprīkojuma noma Latvijā: skatuves, gaismas, skaņa.
-          </p>
-
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/kontakt"
-              className="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 font-medium text-white hover:bg-indigo-500 transition"
-            >
-              Sazināties
-            </a>
-            <a
-              href="/galerija"
-              className="inline-flex items-center rounded-xl border border-neutral-700 px-4 py-2 font-medium hover:bg-neutral-800 transition"
-            >
-              Galerija
-            </a>
-          </div>
-        </section>
+      <main className="container py-8">
+        <Hero />
+        <Services />
+        <Testimonials />
+        <ContactCTA />
       </main>
+      <Footer />
     </>
   );
 }
